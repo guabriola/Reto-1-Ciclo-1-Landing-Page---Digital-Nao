@@ -1,0 +1,83 @@
+/* General */
+
+.btn-primary {
+  border-radius: 20px;
+  margin: 1rem 0 1rem 0;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: #D8951C;
+  --bs-btn-border-color: none ;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #c78814;
+  --bs-btn-shadow-rgb: var(--bd-violet-rgb);
+}
+
+h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+main{
+  justify-content: center;
+  min-height: calc(100vh - 7.5rem);
+}
+
+/* Header */
+
+.header{
+  height: 4rem;
+}
+
+.bg-primary {
+  background-color: #4F4DA9 !important;
+}
+
+.aboutMe {
+  min-width: 100px;
+}
+
+.navbar-brand {
+  color: white;
+  font-family: "Satisfy", cursive;
+  font-size:x-large;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.creador {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  padding: .5rem;
+}
+
+
+/* First Lead Card */
+
+.lead-catcher-card{
+  max-width: 1000px;
+  border: 0;
+  margin: 1rem;
+}
+
+/* Footer */
+
+
+
+@media (max-width: 767.98px) {
+  .change-place {
+    display: flex !important;
+  }
+
+  .order-md-1 {
+    order: 2;
+  }
+
+  .order-md-2 {
+    order: 1;
+  }
+}
