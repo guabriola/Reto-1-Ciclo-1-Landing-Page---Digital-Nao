@@ -56,8 +56,8 @@
     </nav>
 
     <main class="flex-shrink-0 d-flex flex-column align-items-center">
-        <div class="form-container">
-            <form>
+        <div class="background-container">
+            <form id="form">
                 <div class="mb-3">
                     <!-- <label for="exampleInputPassword1" class="form-label">Name</label> -->
                     <input class="form-control" type="text" id="name" placeholder="Jhon Doe"
@@ -65,14 +65,26 @@
                 </div>
                 <div class="mb-3">
                     <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com"
+                    <input type="email" class="form-control" id="InputEmail1" placeholder="name@example.com"
                         aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone.</div>
                 </div>
+                <div id="emailHelp" class="form-text message">We'll never share your email with anyone.</div>
+                <div id="emailHelp" class="form-text message-error">Please provide your name.</div>
+                <div id="emailHelp" class="form-text message-error">Please provide a valid email.</div>
                 <div class="content submit-container">
                     <button type="submit" class="btn btn-primary submit-button">Explore further</button>
                 </div>
             </form>
+        </div>
+
+        <div class="background-container">
+            <form id="form">
+                <h2>Thank you for your trust!</h2> 
+                <h2>Let's shape your future together!</h2>
+            </form>
+            <div class="content submit-container">
+                <button type="submit" class="btn btn-primary submit-button">Ok!</button>
+            </div>
         </div>
     </main>
     <!-- Footer-->

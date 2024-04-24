@@ -103,7 +103,7 @@ label {
   margin: 20px 0 0 0 ;
 }
 
-.form-container{
+.background-container{
   background-image: url('/assets/formBackGround.svg');
   width: 80%;
   max-width: 400px;
@@ -111,10 +111,11 @@ label {
   padding: 60px 20px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-size: cover; /* La imagen se ajusta al contenedor sin deformarse */
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-repeat: no-repeat;
 }
+
 
 @media (max-width: 414px) {
 
