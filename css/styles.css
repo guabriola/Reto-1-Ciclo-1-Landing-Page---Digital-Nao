@@ -81,3 +81,44 @@ main{
     order: 1;
   }
 }
+
+
+/* Lead Form */
+
+label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
+
+.form-text{
+  margin-left: 5px;
+}
+.submit-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button{
+  margin: 20px 0 0 0 ;
+}
+
+.form-container{
+  background-image: url('/assets/formBackGround.svg');
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-size: cover; /* La imagen se ajusta al contenedor sin deformarse */
+  background-position: center;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+@media (max-width: 414px) {
+
+  .form-container{
+    width: 90%;
+  }
+}
