@@ -1,15 +1,22 @@
+/*
+@fileoverview 
+Lead form functions
+It provides functionality and validates name and email.
+*/
+// @author Guillermo Abriola
+
+//Funcion del EvenListener.
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('InputEmail');
     const emailMessage = document.getElementById('emailHelp');
     const okButton = document.getElementById('ok-button');
-    const leadButton = document.getElementById('lead-button');
     const nameErrorMessage = document.querySelector('.message-name-error');
     const emailErrorMessage = document.querySelector('.message-email-error');
     const formContainer = document.querySelector('.form-container');
     const thanksContainer = document.querySelector('.thanks-container');
-    const homeButton = document.querySelector('.navbar-brand');
+
     
     // Form Functionality
     form.addEventListener('submit', function (event) {
@@ -54,13 +61,5 @@ document.addEventListener('DOMContentLoaded', function () {
         formContainer.style.display = 'block';
         thanksContainer.style.display = 'none';
     });
-
-    // homeButton.addEventListener('click', function(event){
-    //     location.replace('index.html');
-    // });
-
-    // leadButton.addEventListener('click', function(event){
-    //     location.replace('leadForm.html');
-    // });
 
 });
