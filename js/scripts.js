@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const emailErrorMessage = document.querySelector('.message-email-error');
     const formContainer = document.querySelector('.form-container');
     const thanksContainer = document.querySelector('.thanks-container');
-
     const catcherCards = document.querySelectorAll('.lead-catcher-card')
     const leadButtons = document.querySelectorAll('.lead-button');
     
@@ -68,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     })
 
-    // okButton functionality
+    //okButton functionality
     okButton.addEventListener('click', function (event) {
         form.reset();
         thanksContainer.style.display = 'none';
