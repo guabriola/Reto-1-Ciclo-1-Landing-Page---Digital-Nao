@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const formContainer = document.querySelector('.form-container');
     const thanksContainer = document.querySelector('.thanks-container');
 
+    const catcherCards = document.querySelectorAll('.lead-catcher-card')
+    const leadButtons = document.querySelectorAll('.lead-button');
     
     // Form Functionality
     form.addEventListener('submit', function (event) {
@@ -55,11 +57,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
+    //Leads Button to Form
+    //This function hide cards and shows the lead form.
+    leadButtons.forEach(function(leadButton){
+        leadButton.addEventListener('click', function (event) {
+            catcherCards.forEach(function(catcherCard){
+                catcherCard.style.display = 'none';
+            })
+            formContainer.style.display = 'block';
+        });
+    })
+
     // okButton functionality
     okButton.addEventListener('click', function (event) {
         form.reset();
-        formContainer.style.display = 'block';
         thanksContainer.style.display = 'none';
+        catcherCards.forEach(function(catcherCard){
+            catcherCard.style.display = 'block';
+        })
     });
 
 });

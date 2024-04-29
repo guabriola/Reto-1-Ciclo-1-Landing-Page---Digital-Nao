@@ -17,10 +17,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Dirt&family=Satisfy&family=Share+Tech+Mono&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -67,7 +68,7 @@
           <div class="card-body d-flex flex-column align-items-center justify-content-center">
             <h2 class="card-title">Seeking to propel your business forward?</h2>
             <div class="d-grid gap-2 col-4 mx-auto">
-              <button  type="button " class="btn btn-primary lead-button">YES!</button>
+              <button type="button " class="btn btn-primary lead-button">YES!</button>
             </div>
           </div>
         </div>
@@ -76,22 +77,57 @@
 
     <!-- Second Lead Catcher Card -->
 
+
     <div class="card mb-3 lead-catcher-card">
       <div class="row g-0">
         <div class="col-md-7 change-place order-md-1">
           <div class="card-body d-flex flex-column align-items-center justify-content-center h-100">
-            <h2 class="card-title">Empowering startups with financial guidance for success. Let's shape your future together.</h2>
+            <h2 class="card-title">Empowering startups with financial guidance for success. Let's shape your future
+              together.</h2>
             <div class="d-grid gap-2 col-4 mx-auto">
-              <button  type="button " class="btn btn-primary lead-button">Let's do it!</button>
+              <button type="button " class="btn btn-primary lead-button">Let's do it!</button>
             </div>
           </div>
         </div>
         <div class="col-md-5 change-place order-md-2">
-          <img src="/assets/businessperson-stock-photography-organization-business-networking-business-woman-ca70b14eb1f703f8116b1d4886e33086.png" class="img-fluid rounded-start" alt="...">
+          <img
+            src="/assets/businessperson-stock-photography-organization-business-networking-business-woman-ca70b14eb1f703f8116b1d4886e33086.png"
+            class="img-fluid rounded-start" alt="...">
         </div>
       </div>
     </div>
-    
+
+    <!-- Lead Form  -->
+    <div class="background-container form-container" style="display:none;">
+      <form id="form">
+        <div class="mb-3">
+          <input class="form-control" type="text" id="name" placeholder="Jhon Doe" aria-label="default input example">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="InputEmail" placeholder="name@example.com"
+            aria-describedby="emailHelp">
+        </div>
+        <div id="emailHelp" class="form-text message">We'll never share your email with anyone.</div>
+        <div class="form-text message-name-error" style="display:none; color:red;">Please provide your name.
+        </div>
+        <div class="form-text message-email-error" style="display:none; color:red;">Please provide a valid
+          email.</div>
+        <div class="content submit-container">
+          <button type="submit" class="btn btn-primary submit-button">Explore further</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Lead form Thanks -->
+    <div class="background-container thanks-container" style="display:none;">
+      <form id="form">
+        <h2>Thank you for your trust!</h2>
+        <h2>We'll shape your future together!</h2>
+      </form>
+      <div class="content submit-container">
+        <button id="ok-button" type="submit" class="btn btn-primary submit-button">Ok!</button>
+      </div>
+    </div>
 
   </main>
   <!-- Footer-->
@@ -106,10 +142,8 @@
       </div>
     </nav>
   </footer>
-  <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Core theme JS-->
-  <script src="js/indexScripts.js"></script>
+  <!-- Functioality Script -->
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
